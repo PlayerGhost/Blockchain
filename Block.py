@@ -19,3 +19,16 @@ class Block:
         blockHash = sha256(blockData.encode()).hexdigest()
 
         return blockHash
+
+    def printBlockData(self):
+        print(f"Index: {self.index}")
+        print(f"Hash: {self.hash}")
+        print(f"Transações: {self.transactions}")
+        print(f"Timestamp: {self.timestamp}")
+        print(f"Hash do bloco anterior: {self.previous_hash}")
+        print(f"Nonce: {self.nonce}")
+        print("--------------------------------------------------------------------")
+
+
+
+

@@ -25,7 +25,7 @@ class Blockchain:
     def mine(self, block):
         startMiningTime = time.time()
 
-        while not block.hash.startswith("000000"):
+        while not block.hash.startswith("0000"):
             block.nonce += 1
             block.hash = block.generateBlockHash()
 
@@ -37,4 +37,10 @@ class Blockchain:
     def printBlocksHash(self):
         for i in self.blocks:
             print(i.hash)
+
+    def printAllBlockData(self):
+        for i in self.blocks:
+            i.printBlockData()
+
+
 

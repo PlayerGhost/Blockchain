@@ -6,4 +6,6 @@ if __name__ == '__main__':
     blockchain.addBlock("Atapo")
     blockchain.addBlock("Atapo")
 
+    blockchain.printAllBlockData()
+
     #blockchain.printBlocksHash()
